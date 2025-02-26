@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+header {
+  background-color: #ff6b81;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+nav .logo h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .nav-links li {
+  margin-left: 25px;
+}
+
+nav .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav .nav-links li a:hover {
+  color: #ffd1d6;
+}
+
+.hero {
+  background-image: url("./../images/pasteleria.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 300px 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h2 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.cta-btn {
+  background-color: #fff;
+  color: #ff6b81;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #ffd1d6;
+  color: #fff;
+}
+
+.productos {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.productos h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.producto-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.producto {
+  text-align: center;
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.producto h3 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.producto p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.producto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-nosotros {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.sobre-nosotros h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.sobre-nosotros p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.contacto {
+  padding: 60px 20px;
+  background-color: #ff6b81;
+  text-align: center;
+  color: #fff;
+}
+
+.contacto h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.contacto form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto label {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+.contacto input:focus,
+.contacto textarea:focus {
+  border-color: #ff6b81;
+}
+
+.contacto button {
+  background-color: #fff;
+  color: #ff6b81;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contacto button:hover {
+  background-color: #ffd1d6;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #bbb;
+}
